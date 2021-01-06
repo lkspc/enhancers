@@ -1,0 +1,21 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "father doc dev",
+    "prebuild": "node scripts/build.js --pre",
+    "build": "father build",
+    "postbuild": "node scripts/build.js --post",
+    "doc": "father doc build",
+    "bootstrap": "node scripts/bootstrap.js",
+    "tsc": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "father": "^2.30.1",
+    "lerna": "^3.22.1",
+    "typescript": "^4.1.3"
+  }
+}
