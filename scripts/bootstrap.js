@@ -21,7 +21,6 @@ pkgs.forEach((name) => {
     types: 'dist/index.d.ts',
     files: ['dist'],
     publishConfig: {
-      registry: 'https://registry.npmjs.org',
       access: 'public',
     },
     repository: {
